@@ -275,14 +275,14 @@ body {
     perspective: 500px;
   }
   
-  .sci li a:hover.facebook{
+  /* .sci li a:hover.facebook{
     background: #1877f2;
     transition-duration: 1s;
   }
   .sci li a:hover.youtube{
     background: #ff0000;
     transition-duration: 1s;
-  }
+  } */
   .sci li a:hover.instagram{
     background: #e4405f;
     transition-duration: 1s;
@@ -315,7 +315,7 @@ body {
   }
   .About_p{
     font-size: 0.8rem;
-    margin: -500px 50px 0 50% ;
+    margin: -80vh 50px 0 50% ;
   }
   .housings{
     margin: 50px;
