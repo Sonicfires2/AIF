@@ -550,25 +550,23 @@ body {
     display: flex;
     justify-content: center;
     min-height: 100vh;
+    max-height: 100vh;
     transition: 0.5s;
-  
   }
-  
+
   #project .cont #dd{
-    margin: 100% 0;
-    font-size: 4em;
+    margin: 0 0;
+    font-size: 4vw;
     color: transparent;
     -webkit-text-stroke: 1px #ffffff;
     transition: 1s;
   }
-  
   
   .cont{
     height: 100vh;
     position: relative;
     transition: 2s;
   } 
-  
   
   .cont .card {
     position: absolute;
@@ -585,19 +583,19 @@ body {
     opacity: 0;
     transform-style: preserve-3d;
   }
-  .cont .card .box{
+  /* .cont .card .box{
     transform-style: preserve-3d;
   }
   .cont .card .box .cards img{
-   /* height: 100%; */
+   height: 100%;
    width: 100%;
    border-radius: 10px;
   }
-  
+   */
   #project .cont:hover #dd{
     margin: 5% 0;
   }
-  .cont:hover .card {
+  /* .cont:hover .card {
     transition: 1s;
     position: absolute;
     top: 35%;
@@ -606,25 +604,24 @@ body {
     opacity: 1;
     transform: translateX(calc(-50% + calc(400px * var(--i)))) translateY(-50%) rotate(0deg) skew(0deg,2deg) scale(1);
     transform-style: preserve-3d;
-  }
-  .cont:hover .card .box .cards{
+  } */
+  /* .cont:hover .card .box .cards{
     background-size: 40px 40px;
     border-radius: 10px;
-    /* -webkit-box-reflect: below 1px linear-gradient(transparent,transparent,transparent,#0004); */
+    -webkit-box-reflect: below 1px linear-gradient(transparent,transparent,transparent,#0004);
   }
   .cont:hover .card:hover{
     transition: 2s;
     margin: -50px 0;
     filter: grayscale(0);
     transition: filter 1s;
-  
   }
-  
-  .cont .card:hover .box .cards .img{
+   */
+  /* .cont .card:hover .box .cards .img{
     box-shadow: 0 50px 80px rgba(0,0,0,1);
-  }
+  } */
   
-  .cont .card .box .contentBX{
+  /* .cont .card .box .contentBX{
     position: absolute;
     top: 70%;
     left: 40px;
@@ -637,14 +634,15 @@ body {
     transform-origin: top;
     transition: 0.5s;
     transform-style: preserve-3d;
-  }
+  } */
   
-  .cont .card .box:hover .contentBX{
+  /* .cont .card .box:hover .contentBX{
     transform: translateZ(80px) scaleY(0.5);
     box-shadow: 0 50px 80px rgba(0,0,0,1);
-  }
+  } */
   
-  @media (max-width: 1000px) {
+  /*Don't fucking change max-witdh into 100vw or anymore than 1001px*/
+  @media (max-width: 99vw) {
     .panal-port{
       overflow: auto;
     }
@@ -665,8 +663,7 @@ body {
         margin: 110px 0 0 0; 
         opacity: 1;
     }
-    .cont:hover,
-    .cont:hover .card{
+    .cont:hover {
         position: relative;
         top: initial;
         left: initial;
